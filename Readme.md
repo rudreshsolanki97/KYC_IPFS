@@ -24,15 +24,20 @@ A simple node app is provided as a compliment to test out the the file upload fe
 ### Setting up the network
 
 To setup the network follow the steps below :  
+1. Install IPFS and GoLang using.
+        
+        bash ./install_IPFS.sh
 
-1. Open file setupIPFS.sh uncomment the code wherever it applies to you
-2. In the root of the codebase directory, run the command <code> bash setupIPFS.sh n</code>, where n is the number of nodesyou want.
-3. When the command is running peer identities will be logged out of every node. Follow the instructions at the end of the file by replacing concerned peer identities of respective node numbers with the one you just logged.  
-4. Now once you have added nodes & assigned them IPS, go to setup directory & for each node create a ```.sh``` file with following contents:  
-```export LIBP2P_FORCE_PNET=1 && IPFS_PATH=~/.ipfs1 ipfs daemon```  
-Replace 1 with nodenumber for that file. 
+2. Setup IPFS Deamon
+        
+        bash ./setupIPFS.sh n
 
-Now run <code>bash run.sh</code>
+In the root of the codebase directory, run the command <code> bash setupIPFS.sh n</code>, where n is the number of nodesyou want.
+3. If the execution is successful, run the run.sh file.  
+        
+        bash ./run.sh
+
+
 
 ### Setting up endpoint
  1. Do ```npm install```  
@@ -41,6 +46,7 @@ Now run <code>bash run.sh</code>
  3. start the application by ```npm run server```
  4. Open localhost:5000 & upload any .png file.
  5. A hash will logged out in the console for server
- 6. Open you image directly from ipfs by visiting ```http://127.0.0.1:8080/ipfs/QmZULkCELmmk5XNfCgTnCyFgAVxBRBXyDHGGMVoLFLiXEN```  
+ 6. Open you image directly from ipfs by visiting ```http://127.0.0.1:808i/ipfs/QmZULkCELmmk5XNfCgTnCyFgAVxBRBXyDHGGMVoLFLiXEN```  ;
+ where i = node number  
  Replace the hash with hash for your file.
 
