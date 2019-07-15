@@ -3,3 +3,4 @@
 coinbase.js
 swarm.key
 /nodes
+./package-lock.json
