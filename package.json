@@ -22,7 +22,6 @@
     "mongoose": "^5.1.2",
     "nodemon": "^1.17.4",
     "path": "^0.12.7",
-    "react-popup": "^0.9.3",
-    "web3": "0.19.0"
+    "react-popup": "^0.9.3"
   }
 }
