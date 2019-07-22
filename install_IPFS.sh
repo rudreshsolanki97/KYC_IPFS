@@ -9,4 +9,4 @@ sudo mv go-ipfs/ipfs /usr/local/bin/ipfs
 
 # Remove tar file
 rm -R go-ipfs_v0.4.13_linux-amd64.tar.gz
-sudo mv ./go-ipfs $home
+cp go-ipfs/* ~/go-ipfs -r
