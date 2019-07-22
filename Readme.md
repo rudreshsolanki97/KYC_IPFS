@@ -46,7 +46,7 @@ In the root of the codebase directory, run the command <code> bash setupIPFS.sh 
  3. start the application by ```npm run server```
  4. Open localhost:5000 & upload any .png file.
  5. A hash will logged out in the console for server
- 6. Open you image directly from ipfs by visiting ```http://127.0.0.1:808i/ipfs/QmZULkCELmmk5XNfCgTnCyFgAVxBRBXyDHGGMVoLFLiXEN```  ;
+ 6. Open you image directly from ipfs by visiting ```http://127.0.0.1:808i/ipfs/QmZULkCELmmk5XNfCgTnCyFgAVxBRBXyDHGGMVoLFLiXEN```  ;  
  where i = node number  
  Replace the hash with hash for your file.
 
