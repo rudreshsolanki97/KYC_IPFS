@@ -13,7 +13,7 @@ console.log("BODY : ", req.files);
  
   let KYC = req.files.filename;
   var hash;
-  const name = "dummy.png";
+  const name = "dummy"+path.extname(KYC.name);
 
   KYC.mv(path.join(__dirname, "../tmp/", name), function(err) {
     if (err) {
